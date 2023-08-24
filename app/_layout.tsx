@@ -6,27 +6,70 @@ export default function AppLayout() {
     
     <Drawer>
       <Drawer.Screen
-        name="index" // This is the name of the page and must match the url from root
+        name="index" 
         options={{
           drawerLabel: "Home",
           title: "Bem-vindo",
         }}
       />
       <Drawer.Screen
-        name="telaA" // This is the name of the page and must match the url from root
+        name="2login" 
         options={{
-          drawerLabel: "Tela A",
-          title: "Tela A",
+          drawerLabel: "Login",
+          title: "Login",
         }}
       />
       <Drawer.Screen
-        name="telaB" // This is the name of the page and must match the url from root
+        name="3escolher" 
         options={{
-          drawerLabel: "Tela B",
-          title: "Tela B",
+          drawerLabel: "Escolher cardapio",
+          title: "Cardapios",
     
         }}
       />
+      
+      <Drawer.Screen
+        name="5cardapio" 
+        options={{
+          drawerLabel: "Cardapio do dia",
+          title: "Cardapio do dia",
+    
+        }}
+      
+      />
+      <Drawer.Screen
+        name="7sugestoes" 
+        options={{
+          drawerLabel: "Sugestões",
+          title: "Sugestões",
+    
+        }}
+      />
+      <Drawer.Screen
+        name="4add" 
+        options={{
+          drawerLabel: "",
+          title: "Adicionar",
+    
+        }}
+      />
+      <Drawer.Screen
+        name="6itens" 
+        options={{
+          drawerLabel: "",
+          title: "Adicionar",
+    
+        }}
+      />
+      <Drawer.Screen
+        name="8dia" 
+        options={{
+          drawerLabel: "",
+          title: "Adicionar",
+    
+        }}
+      />
+
     </Drawer>
 
   );

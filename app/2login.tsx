@@ -8,13 +8,20 @@ export default function App() {
    
     <View style={styles.container}>
       <Image source={require("../assets/logo.png")} />
+      <TextInput
+        placeholder="Insira seu usuario"
+        style={styles.input}
+      />
+       <TextInput
+        placeholder="Insira sua senha"
+        style={styles.input}
+      />
    
- 
-      <Link style= {styles.botao} href="/3escolher">ENTRAR</Link>
+     
+      <Link style= {styles.botao} href="/4add">ENTRAR</Link>
       <StatusBar style="auto" />
-      <Link style= {styles.botao2} href="/2login">caso você trabalhe na cantina, clique aqui para fazer seu login</Link>
-     
-     
+      <Link href="/">Voltar</Link>
+      <Text style={styles.titulo}>apenas pessoas com o dominio SesiSenai terão acesso</Text>
 
 
       <Image  style={styles.img} source={require("../assets/footer.png")} />
@@ -52,14 +59,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginTop: 100,
     fontFamily: "timenewroman",
-    borderWidth: 1
-
-
-
-
-   
-
-
+    borderWidth: 1,
   },
 
 
@@ -71,6 +71,7 @@ const styles = StyleSheet.create({
     width: 200,
     height: 40,
     borderRadius: 10,
+    borderWidth: 1,
    
     fontFamily: "timenewroman"
 
@@ -80,18 +81,5 @@ const styles = StyleSheet.create({
   {
 marginTop: 50,
 width: 400
-  },
-  botao2:
-  {
-    fontSize: 20,
-    backgroundColor: "#6ACAE8",
-    margin: 5,
-    width: 400,
-    height: 50,
-    textAlign: "center",
-    borderRadius: 10,
-    marginTop: 100,
-    fontFamily: "timenewroman",
-   borderWidth: 1
-    }
+  }
 });
