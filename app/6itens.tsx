@@ -41,6 +41,8 @@ export default function App() {
       <Link style={styles.voltar} href="/8dia">Suco Prats - sabores diversos</Link>
       <Link style={styles.voltar} href="/8dia">Chá - sabores diversos</Link>
       <Link style={styles.voltar} href="/8dia">Água</Link>
+      <Link style={styles.voltar} href="/8dia">Nescau</Link>
+      <Link style={styles.voltar} href="/8dia">Iorgute</Link>
     
      
 
