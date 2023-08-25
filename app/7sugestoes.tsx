@@ -110,7 +110,15 @@ const styles = StyleSheet.create({
   },
   enviar:
   {
-    backgroundColor: "#6ACAE8"
+    backgroundColor: "#6ACAE8",
+    paddingHorizontal: 15,
+    paddingVertical: 10,
+    fontSize: 12,
+    borderRadius: 8,
+    borderWidth: 1,
+    color: '#333',
+    bordercolor: '#000',
+
   }
 });
 

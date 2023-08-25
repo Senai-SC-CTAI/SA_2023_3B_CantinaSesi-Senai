@@ -43,16 +43,18 @@ const styles = StyleSheet.create({
 
   },
   botao:{
-    fontSize: 30,
-    backgroundColor: "#6ACAE8",
-    margin: 5,
-    width: 300,
-    height: 60,
-    textAlign: "center",
-    borderRadius: 10,
-    marginTop: 100,
-    fontFamily: "timenewroman",
-    borderWidth: 1
+    marginTop:100,
+    marginBottom: 10,
+    padding: 8,
+    width:300,
+    cursor: 'pointer',
+    backgroundColor: '#70ccec',
+    textDecorationLine: 'none',
+    fontSize: 20,
+    color: 'black',
+    borderRadius: 6,
+    borderWidth: 2,
+    textAlign: 'center',
 
 
 
@@ -83,15 +85,18 @@ width: 400
   },
   botao2:
   {
-    fontSize: 20,
-    backgroundColor: "#6ACAE8",
-    margin: 5,
-    width: 400,
+    marginTop:100,
+    marginBottom: 10,
+    padding: 8,
+    width:300,
     height: 50,
-    textAlign: "center",
-    borderRadius: 10,
-    marginTop: 100,
-    fontFamily: "timenewroman",
-   borderWidth: 1
+    cursor: 'pointer',
+    backgroundColor: '#70ccec',
+    textDecorationLine: 'none',
+    fontSize: 13,
+    color: 'black',
+    borderRadius: 6,
+    borderWidth: 2,
+    textAlign: 'center',
     }
 });

@@ -21,7 +21,7 @@ export default function App() {
       <Link style= {styles.botao} href="/4add">ENTRAR</Link>
       <StatusBar style="auto" />
       <Link href="/">Voltar</Link>
-      <Text style={styles.titulo}>apenas pessoas com o dominio SesiSenai terão acesso</Text>
+      <Text style={styles.titulo}>Apenas pessoas com o dominio SesiSenai terão acesso</Text>
 
 
       <Image  style={styles.img} source={require("../assets/footer.png")} />
@@ -50,16 +50,18 @@ const styles = StyleSheet.create({
 
   },
   botao:{
-    fontSize: 30,
-    backgroundColor: "#6ACAE8",
-    margin: 5,
-    width: 300,
-    height: 60,
-    textAlign: "center",
-    borderRadius: 10,
-    marginTop: 100,
-    fontFamily: "timenewroman",
-    borderWidth: 1,
+    marginTop:10,
+    marginBottom: 10,
+    padding: 8,
+    width:300,
+    cursor: 'pointer',
+    backgroundColor: '#70ccec',
+    textDecorationLine: 'none',
+    fontSize: 20,
+    color: 'black',
+    borderRadius: 6,
+    borderWidth: 2,
+    textAlign: 'center',
   },
 
 
