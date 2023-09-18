@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, FlatList, StyleSheet, TouchableOpacity, TextInput } from 'react-native';
+import { View, Text, FlatList, StyleSheet, link, } from 'react-native';
 
 const initialData = [
   { id: '1', name: 'Bolo de Chocolate', price: 'R$ 5.00' },
@@ -14,13 +14,10 @@ const initialData = [
   { id: '10', name: 'Refrigerante', price: 'R$ 2.50' },
 ];
 
-const CantinaItem = ({ item, onDelete }) => (
+const CantinaItem = ({ item,}) => (
   <View style={styles.cantinaItem}>
     <Text style={styles.itemName}>{item.name}</Text>
     <Text style={styles.itemPrice}>{item.price}</Text>
-    <TouchableOpacity onPress={() => onDelete(item.id)} style={styles.deleteButton}>
-      <Text style={styles.deleteButtonText}>Excluir</Text>
-    </TouchableOpacity>
   </View>
 );
 
@@ -50,25 +47,11 @@ const App = () => {
 
   return (
     <View style={styles.container}>
-      <View style={styles.addForm}>
-        <TextInput
-          style={styles.input}
-          placeholder="Nome do Item"
-          value={newItemName}
-          onChangeText={setNewItemName}
-        />
-        <TextInput
-          style={styles.input}
-          placeholder="Preço"
-          value={newItemPrice}
-          onChangeText={setNewItemPrice}
-        />
-        <TouchableOpacity onPress={handleAddItem} style={styles.addButton}>
-          <Text style={styles.addButtonText}>Adicionar</Text>
-        </TouchableOpacity>
-      </View>
+     
+        
+     
       <View style={styles.tableHeader}>
-        <Text style={styles.headerText}>Nome do Item</Text>
+        <Text style={styles.headerText}>Item</Text>
         <Text style={styles.headerText}>Preço</Text>
       </View>
       <FlatList
@@ -76,10 +59,21 @@ const App = () => {
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
           <CantinaItem item={item} onDelete={handleDeleteItem} />
+          
         )}
+        
       />
+      <view style={styles.voltar}>
+
+      
+      
+      
+      </view>
+      
     </View>
+    
   );
+  
 };
 
 const styles = StyleSheet.create({
@@ -87,6 +81,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#f2f2f2',
     padding: 16,
+    
   },
   addForm: {
     marginBottom: 16,
@@ -100,17 +95,7 @@ const styles = StyleSheet.create({
     borderColor: '#ccc',
     borderWidth: 1,
   },
-  addButton: {
-    backgroundColor: '#3498db',
-    paddingVertical: 10,
-    paddingHorizontal: 16,
-    borderRadius: 8,
-    alignItems: 'center',
-  },
-  addButtonText: {
-    color: '#fff',
-    fontWeight: 'bold',
-  },
+
   tableHeader: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -151,17 +136,8 @@ const styles = StyleSheet.create({
     color: '#e74c3c',
     marginLeft: 12,
   },
-  deleteButton: {
-    backgroundColor: '#e74c3c',
-    paddingVertical: 6,
-    paddingHorizontal: 10,
-    borderRadius: 4,
-    margin: 10
-  },
-  deleteButtonText: {
-    color: '#fff',
-    fontSize: 12,
-  },
+  
+ 
 });
 
 export default App;
