@@ -1,0 +1,25 @@
+.nav{
+    background-color:#e2f1fa00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* padding: 1rem 2rem; */
+    padding: 0rem 1.5rem;
+    border-radius: 3rem;
+    color: #00478a;
+    font-weight: 500;
+    border: solid 1px #00478a;
+    /* justify-self: flex-start; */
+    /* margin-top: -37rem; */
+}
+.nav p{
+    padding: 1rem 1.5rem;
+    transition: 700ms;
+    /* border-radius: 3rem; */
+}
+.nav p:hover{
+    background-color: #d6f0ffda;
+    /* color: #6ACAE8; */
+    /* border-radius: 3rem; */
+}

@@ -1,0 +1,21 @@
+.sujest{
+    height: 80%;
+    text-align: left;
+    width:100%;
+    font-size: 1rem;
+    text-align: left;
+    padding: 1rem;
+}
+.sujestContainer{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.sujestContainer span{
+    opacity: 0.6;
+    text-align: center;
+}

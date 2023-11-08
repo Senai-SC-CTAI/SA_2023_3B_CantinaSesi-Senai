@@ -1,0 +1,25 @@
+.listaDias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 50%;
+    height: 50%;
+    margin: 3rem 0rem;
+}
+.dia {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 50%;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    background-color: #6ACAE8;
+    color: #012733d7;
+    font-size: 17px;
+}
+.dia input{
+    width: 10%;
+    
+}
