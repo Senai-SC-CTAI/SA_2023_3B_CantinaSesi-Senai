@@ -1,25 +1,27 @@
 package com.sa.moka.controller;
-import com.sa.moka.model.Produto;
-import com.sa.moka.repository.ProdutoRepository;
+import com.sa.moka.model.Comida;
+import com.sa.moka.repository.ComidaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.http.ResponseEntity;
+
 @CrossOrigin(origins = "http://localhost:5173") // Endereço do front
 @RestController
 
-@RequestMapping("/produto")
-public class ProdutoController {
+@RequestMapping("/comidas")
+public class ComidaController {
     @Autowired
-    private ProdutoRepository ProdutoRepository;
+    private ComidaRepository ComidaRepository;
+
     @GetMapping
-    public List<Produto> listarProduto() {
-        return ProdutoRepository.findAll();
+    public List<Comida> listarComida() {
+        return ComidaRepository.findAll();
     }
     @PostMapping
-    public Produto criarProduto(@RequestBody Produto produto) {
-        return ProdutoRepository.save(produto);
+    public Comida criarComida(@RequestBody Comida comida) {
+        return ComidaRepository.save(comida);
     }
 
 }

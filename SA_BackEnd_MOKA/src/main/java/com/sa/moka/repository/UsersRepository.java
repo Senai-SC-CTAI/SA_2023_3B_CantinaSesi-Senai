@@ -1,5 +1,5 @@
 package com.sa.moka.repository;
-import com.sa.cadastrostorage.model.Users;
+import com.sa.moka.model.Users;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 @Repository

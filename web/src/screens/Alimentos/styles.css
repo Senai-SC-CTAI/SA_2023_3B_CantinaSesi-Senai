@@ -80,3 +80,7 @@
     border: solid 1px #303030;
     background-color: #e0e0e038;
 }
+
+.images img{
+    max-width: 200px;
+}
