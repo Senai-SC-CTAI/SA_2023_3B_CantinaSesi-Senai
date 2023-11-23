@@ -6,12 +6,12 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-public class Users {
+public class Usuario {
     @Id
     private Long Cpf_users;
     private String Name_users;
     private Long Tel_users;
-
+    private String senha;
 }
 
 

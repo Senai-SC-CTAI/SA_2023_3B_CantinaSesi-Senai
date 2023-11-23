@@ -11,7 +11,7 @@ export function Sujestoes() {
             <img src={Wave2} className='waveImg2' />
             <div className="mainContainer">
                 <Header />
-                <h1 className='title'>Sujestões</h1>
+                <h1 className='title'>Sugestões</h1>
                 <div className="sujestContainer">
                     <span>Ajude a melhorar o nosso atendimento e os produtos que podemos fornecer, lembre-se que a escola tem suas normas e leis do que pode ou não ser vendido em escola.</span>
                     <textarea type="text" className='sujest' />

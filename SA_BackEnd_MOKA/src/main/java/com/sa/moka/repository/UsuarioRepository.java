@@ -1,7 +1,7 @@
 package com.sa.moka.repository;
-import com.sa.moka.model.Users;
+import com.sa.moka.model.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 @Repository
-public interface UsersRepository extends JpaRepository<Users, Long> {
+public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 }
